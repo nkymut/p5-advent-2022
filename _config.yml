@@ -6,3 +6,7 @@ remote_theme: nkymut/just-the-docs
 show_downloads: "true"
 google_analytics: G-GX0HTR3LCT
 ga_tracking: G-GX0HTR3LCT
+
+layout: page
+title: "TEST-PAGE-TITLE"
+permalink: /p5_advent2022
