@@ -1,12 +1,8 @@
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-GX0HTR3LCT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-GX0HTR3LCT');
-</script>
+---
+layout: page
+title: About
+permalink: /about/
+---
 
 
 # p5.js とmicro:bit でフィジカルコンピューティング
