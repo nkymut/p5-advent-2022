@@ -1,7 +1,8 @@
 # theme: jekyll-theme-minimal
-remote_theme: just-the-docs/just-the-docs
+remote_theme: nkymut/just-the-docs
 # https://github.com/mmistakes/minimal-mistakes
 # remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 
 show_downloads: "true"
 google_analytics: G-GX0HTR3LCT
+ga_tracking: G-GX0HTR3LCT
