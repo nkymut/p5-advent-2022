@@ -17,7 +17,7 @@ date: 09/12/2022
 }  
 .p5livesample{
   height: 430px;
-  width: 400px;
+  width: 410px;
   padding: 0px;
   margin: 0px;
   top: 0%;
@@ -49,7 +49,7 @@ date: 09/12/2022
 [筆者](https://github.com/nkymut)が受け持っているシンガポール国立大学のインダストリアルデザイン学科での授業では、
 p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから７週で下のような作品を作れるようにしています。
 
-<iframe width="100%" height="300pem" src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+<iframe scrolling="no" width="100%" height="300pem" src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
 
 　<br>
@@ -73,7 +73,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 ## 環境と制限
 
-まずはじめに、p5.jsとmicro:bitをWebUSB/WebBluetooth越しで使用する環境にいくつか制限があります。
+まずはじめに、p5.jsとmicro:bitをWebUSB/WebBluetooth越しで使用する環境には、いくつかの制限があります。
 
 ### WebブラウザのWebUSB/WebBluetooth対応状況
 
@@ -115,7 +115,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 [https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor)
 
 <div class="p5div">
-<iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/uart_lightsensor/"> </iframe>
+<iframe scrolling="no" class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/uart_lightsensor/"> </iframe>
 </div>
 
 
@@ -195,7 +195,11 @@ function disconnect() {
 ```
 
 p5.js とmicro:bitのやりとりはコールバック関数として設定します。
-`microBit.onConnect()`と`microBit.onDisonnect()`では接続・切断時のふるまいを指定して、`microBit.setReceiveUARTCallback()`ではmicro:bitからのデータを受信したときにどうするかを設定します。ここでは受信した光センサのデータを電球の明るさ値に設定しています。
+
+- `microBit.onConnect()`と`microBit.onDisonnect()`では接続・切断時のふるまいを指定して、
+- `microBit.setReceiveUARTCallback()`ではmicro:bitからのデータを受信したときにどうするかを設定します。
+
+ここでは受信した光センサのデータを電球の明るさ値に設定しています。
 
 ```js
   /* setup() 内*/
@@ -224,7 +228,7 @@ p5.js とmicro:bitのやりとりはコールバック関数として設定し�
 というわけで実際に動作を試してみましょう。
 
 <div class="p5div">
-<iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/uart_lightsensor/"> </iframe>
+<iframe scrolling="no" class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/uart_lightsensor/"> </iframe>
 </div>
 
 Connectボタンを押すと、下のようなポップアップ表示が出るので、お目当てのmicro:bitを選択して接続します。
@@ -339,7 +343,7 @@ https://makecode.microbit.org/_F8DFrygkTRP1
 
 
 <div class="p5div">
-<iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webble-p5js/examples/uart_lightsensor/"> </iframe>
+<iframe scrolling="no" class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webble-p5js/examples/uart_lightsensor/"> </iframe>
 </div>
 
 ## micro:bit のBluetoothペアリング
@@ -373,7 +377,7 @@ micro:bitのBluetooth拡張には、UARTの他にもmicro:bitの内部センサ�
 
 
 <div class="p5div">
-<iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webble-p5js/examples/accelerometer_3Dbox/
+<iframe scrolling="no" class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webble-p5js/examples/accelerometer_3Dbox/
 "> </iframe>
 </div>
 
