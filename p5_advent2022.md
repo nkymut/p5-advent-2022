@@ -3,6 +3,34 @@ layout: page
 title: p5.jsとmicro:bit でフィジカルコンピューティング
 permalink: /index.html
 has_toc: true
+
+<style>
+.p5div{
+  padding:10px;
+  background:#F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+.p5livesample{
+  height: 430px;
+  width: 400px;
+  padding: 0px;
+  margin: 0px;
+  top: 0%;
+  left: 0;
+  overflow: hidden;
+  border: none;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+
 ---
 
 # p5.jsとmicro:bitでフィジカルコンピューティング
@@ -51,7 +79,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 ## 環境と制限
 
-いいことずくめのp5.jsとmicro:bitですが、WebUSB/WebBluetooth越しに使用するのにいくつか制限があります。
+設定要らずのp5.jsとmicro:bitですが、WebUSB/WebBluetooth越しに使用するのにいくつか制限があります。
 
 ### WebブラウザのWebUSB/WebBluetooth対応状況
 
@@ -84,32 +112,11 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 |  [https://glitch.com/](https://glitch.com/) |○|○|
 |  [VSCode LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |○|○|
 
-
-
-
 # WebUSBサンプル：光センサ入力
 
 では早速、micro:bitの光センサで電球の色を変えてみましょう。
 
-<style>
-.p5div{
-  padding:10px;
-  background:#F0F0F0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}  
-.p5livesample{
-  height: 430px;
-  width: 400px;
-  padding: 0px;
-  margin: 0px;
-  top: 0%;
-  left: 0;
-  overflow: hidden;
-  border: none;
-}
-</style>
+
 
 [https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor)
 
@@ -141,8 +148,6 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 
 micro:bitのコードをロードしたらShowData(Device)ボタンをクリックして、コンソールとグラフ表示でセンサーが正常に動作していることを確認します。
-
-
 
 ![プログラムのセンサ入力値のチェック画像](./assets/MicroBit_MakeCode_Console.png)
 
@@ -222,13 +227,15 @@ p5.js とmicro:bitのやりとりはコールバック関数として設定し�
 
 ## 動作チェック
 
+というわけで実際に動作を試してみましょう。
+
 <div class="p5div">
 <iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/uart_lightsensor/"> </iframe>
 </div>
 
-というわけで試してみましょう、Connectボタンを押すと、下のようなポップアップ表示が出るので、お目当てのmicro:bitを選択して接続します。
+Connectボタンを押すと、下のようなポップアップ表示が出るので、お目当てのmicro:bitを選択して接続します。
 
-![](./assets/WebUSB_pairing.png)
+![](./assets/p5js_WebUSB_Pairing.png)
 
 micro:bitとの接続が完了すると、光センサの値によって電球の明るさが変わるはずです。
 スマホのライトを当てたりして遊んでみてください。
@@ -243,12 +250,15 @@ micro:bitとの接続が完了すると、光センサの値によって電球�
 
 [https://github.com/nkymut/microbit-webusb-p5js/blob/master/examples/uart_lightsensor/sketch.js](https://github.com/nkymut/microbit-webusb-p5js/blob/master/examples/uart_lightsensor/sketch.js)
 
-
 ---
 
 # WebBluetoothサンプル：光センサ
 
 WebUSBが動いたところで早速、同じコードをWebBluetoothで無線化してみましょう。
+
+[https://github.com/nkymut/microbit-webble-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webble-p5js/tree/master/examples/uart_lightsensor)
+
+
 
 ## micro:bitのBluetooth拡張
 
@@ -328,7 +338,7 @@ https://makecode.microbit.org/_F8DFrygkTRP1
 <br>えっ、他にコードを追加しなくてよいんですかって？
 そうなんです、`uBitWebUSB`と`uBitWebBluetooth`
 では同じAPIでUART通信できるようにしてあるので、コンストラクタの変更だけで動きます。
-あっと驚くタメゴローです。
+[あっと驚くタメゴロー](https://www.youtube.com/watch?v=uNRT5oiIstQ)です。
 
 
 <div class="p5div">
@@ -340,10 +350,13 @@ https://makecode.microbit.org/_F8DFrygkTRP1
 ![ブルーツース全部入り](./assets/MicroBit_Bluetooth_All.png)
 
 micro:bitのBluetooth拡張には、UARTの他にもmicro:bitの内部センサ値やボタンやLED・GPIOなどの入出力に直接アクセスするサービスが公開されています。
-こちらが全部入りコードです。
-https://makecode.microbit.org/61779-39134-92711-11083
+こちらがmicro:bitのBluetooth サービス全部入りコードです。
+[https://makecode.microbit.org/61779-39134-92711-11083](https://makecode.microbit.org/61779-39134-92711-11083)
 
 ここでは加速度センサを使った例を見てみます。
+
+[https://github.com/nkymut/microbit-webble-p5js/tree/master/examples/accelerometer_3Dbox](https://github.com/nkymut/microbit-webble-p5js/tree/master/examples/accelerometer_3Dbox)
+
 
 <div class="p5div">
 <iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webble-p5js/examples/accelerometer_3Dbox/
@@ -384,13 +397,16 @@ function draw() {
 }
 ```
 
+この加速度センサ入力を利用すると
+[このようなゲーム](https://nkymut.github.io/microbit-webble-p5js/examples/p5play_example/)を作ることができます。
+
 
 ---
 # まとめ
 
 以上、p5.jsとmico:bitをWebUSBとWebBluetooth経由で通信させて簡単な物理入力デバイスを作る方法を紹介しました。
 
-今回紹介しきれなかった、Neopixelのコントロールなど様々なサンプルを今後もアップデートしていくので、
+今回紹介しきれなかった、Neopixel LEDのコントロールなど様々なサンプルを今後もアップデートしていくので、
 下の各ライブラリGitHubプロジェクトのフォローをお願いします。
 
 もし、改善要望やバグなどありましたらどうぞお気軽に、Issueやプルリクを送ってください。
