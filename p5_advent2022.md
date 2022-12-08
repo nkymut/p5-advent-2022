@@ -3,6 +3,8 @@ layout: page
 title: p5.jsとmicro:bit でフィジカルコンピューティング
 permalink: /index.html
 has_toc: true
+author: Yuta Nakayama
+date: 09/12/2022
 ---
 
 <style>
@@ -65,8 +67,8 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 ||||
 |--|--|--|
-|WebUSB| [https://github.com/nkymut/microbit-webusb-p5js](https://github.com/nkymut/microbit-webusb-p5js)|[microbit-webusb](https://github.com/bsiever/microbit-webusb) をクラス化、<br>複数インスタンス接続可にしたもの|
-|WebBluetooth|[https://github.com/nkymut/microbit-webble-p5js](https://github.com/nkymut/microbit-webble-p5js)|[microBit.js by antefact ](https://antefact.github.io/microBit.js/)に[IAMAS小林茂さんのGist](https://gist.github.com/kotobuki/7c67f8b9361e08930da1a5cfcfb0653f)のコードをマージしてUART対応したもの|
+|WebUSB| [https://nkymut.github.io/microbit-webusb-p5js/](https://nkymut.github.io/microbit-webusb-p5js/)|[microbit-webusb](https://github.com/bsiever/microbit-webusb) をクラス化、<br>複数インスタンス接続可にしたもの|
+|WebBluetooth|[https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)|[microBit.js by antefact ](https://antefact.github.io/microBit.js/)に[IAMAS小林茂さんのGist](https://gist.github.com/kotobuki/7c67f8b9361e08930da1a5cfcfb0653f)のコードをマージしてUART対応したもの|
 
 
 ## 環境と制限
@@ -255,7 +257,7 @@ WebUSBが動いたところで早速、同じコードをWebBluetoothで無線�
 ## micro:bitのBluetooth拡張
 
 まず、micro:bitのmakeCodeエディタに[Bluetooth拡張](https://makecode.microbit.org/reference/bluetooth)を追加します。
-![](./assets/MicroBit_blutooth-extension.gif)
+![](./assets/MicroBit_Bluetooth_Extension.gif)
 
 
 ## micro:bitのBluetooth UART送信プログラム
@@ -337,6 +339,23 @@ https://makecode.microbit.org/_F8DFrygkTRP1
 <iframe class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webble-p5js/examples/uart_lightsensor/"> </iframe>
 </div>
 
+## micro:bit のBluetoothペアリング
+Connectボタンを押すと、WebUSBの時と同様に、ペアリングの画面が表示されます。
+![](./assets/MicroBit_Bluetooth_PairingID.png){: width="50%" }
+
+```
+BBC micro:bit [固有ID]
+```
+ここで表示される5文字のアルファベットがmicro:bitのBluetooth通信時の固有IDになっており、
+複数台のmicro:bitを扱う場合は、このIDで個体を認識します。
+
+が！
+
+このIDがなんと **実際接続してみる以外に知る方法がない！** のでワークショップなどで
+数十台のmicro:bitを扱うときに事前にIDを調べておかないとハマります(ハマりました)。
+micro:bit本体にシールなどでメモっておくと便利です。
+
+
 
 # WebBluetoothサンプル：加速度センサ
 ![ブルーツース全部入り](./assets/MicroBit_Bluetooth_All.png)
@@ -365,7 +384,7 @@ acc_y=acceleration.y;　// Y軸
 acc_z=acceleration.z;  // Z軸
  ```
 
-上の例ではこのような感じです。
+上の例ではX軸とY軸の値を箱のZとX軸の回転に割り当てています。
 
 ```js
 function draw() {
