@@ -279,13 +279,13 @@ WebUSBサンプルで使用したコードに2点追加します。
  - [[bluetooth uart write line](https://makecode.microbit.org/reference/bluetooth/uart-write-line)] micro:bitから改行付きテキストデータを送信します。
  - [(convert to text)](https://makecode.microbit.org/reference/text/convert-to-text): [bluetooth uart write line]  は、数値データを直接指定することができないので数値をテキストに変換する必要があります。 
 
-WebBluetooth光センサ micro:bitコード v01用: [microbit-LightSensorBLEUARTv01.hex](https://nkymut.github.io/microbit-webble-p5js/examples/RecvUARTLightSensor/microbit_code/microbit-LightSensorBLEUARTv01.hex)
+WebBluetooth光センサ micro:bitコード v01用: [microbit-LightSensorBLEUARTv01.hex](https://nkymut.github.io/microbit-webble-p5js/examples/uart_lightsensor/microbit_code/microbit-LightSensorBLEUARTv01.hex)
 
 
 ### Bluetooth 接続状態の表示
 ![micro:bit BLE 光センサコード改良版](./assets/WebBle_lightsensor2.png)
 
-WebBluetooth光センサ micro:bitコード v02用:[microbit-LightSensorBLEUARTv02.hex](https://nkymut.github.io/microbit-webble-p5js/examples/RecvUARTLightSensor/microbit_code/microbit-LightSensorBLEUARTv02.hex)
+WebBluetooth光センサ micro:bitコード v02用:[microbit-LightSensorBLEUARTv02.hex](https://nkymut.github.io/microbit-webble-p5js/examples/uart_lightsensor/microbit_code/microbit-LightSensorBLEUARTv02.hex)
 
 WebUSBと違い無線の場合、コンソールからmicro:bitnの状態を確認できないので、
 LEDマトリクスにBluetoothの接続状態を表示すると便利です。
@@ -418,6 +418,11 @@ function draw() {
 この加速度センサ入力を利用すると
 [このようなゲーム](https://nkymut.github.io/microbit-webble-p5js/examples/p5play_example/)を作ることができます。
 
+
+<div class="p5div">
+<iframe scrolling="no" class="p5livesample" allow="usb" style="width:800px" src="https://nkymut.github.io/microbit-webble-p5js/examples/p5play_example/
+"> </iframe>
+</div>
 
 ---
 # まとめ
