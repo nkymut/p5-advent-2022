@@ -3,6 +3,7 @@ layout: page
 title: p5.jsとmicro:bit でフィジカルコンピューティング
 permalink: /index.html
 has_toc: true
+---
 
 <style>
 .p5div{
@@ -30,8 +31,6 @@ img{
 }
 
 </style>
-
----
 
 # p5.jsとmicro:bitでフィジカルコンピューティング
 
