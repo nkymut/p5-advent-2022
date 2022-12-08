@@ -14,10 +14,10 @@ title: ""
 # Aux links for the upper right navigation
 aux_links:
   "microbit-webueb-p5js on GitHub":
-    - "//https://github.com/nkymut/microbit-webusb-p5js"
+    - "//github.com/nkymut/microbit-webusb-p5js"
   "microbit-webble-p5js on GitHub":
-    - "//https://github.com/nkymut/microbit-webble-p5js"
+    - "//github.com/nkymut/microbit-webble-p5js"
 
 
 # Makes Aux links open in a new tab. Default is false
-aux_links_new_tab: true
+aux_links_new_tab: false
