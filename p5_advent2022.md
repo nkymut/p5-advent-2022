@@ -415,7 +415,7 @@ function draw() {
 }
 ```
 
-この加速度センサ入力を利用すると
+この加速度センサ入力を[p5.play](https://p5play.org/)と組み合わせると
 [このようなゲーム](https://nkymut.github.io/microbit-webble-p5js/examples/p5play_example/)を作ることができます。
 
 
