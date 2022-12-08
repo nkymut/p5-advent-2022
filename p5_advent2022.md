@@ -27,7 +27,7 @@ has_toc: true
 筆者のシンガポール国立大学のインダストリアルデザイン学科での授業では、
 p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから７週で下のような作品を作れるようにしています。
 
-<iframe width=100% height=300pem src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="300pem" src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
 
 　<br>
@@ -386,7 +386,7 @@ function draw() {
 
 
 ---
-## まとめ
+# まとめ
 
 以上、p5.jsとmico:bitをWebUSBとWebBluetooth経由で通信させて簡単な物理入力デバイスを作る方法を紹介しました。
 
@@ -412,15 +412,14 @@ WebMidiという方法がありますが以前p5.soundをMIDI経由で鳴らす�
 それでは良い師走を〜🎅
 
 
-## 参考
+# 参考
 
 - micro:bit Bluetooth Profile <br>
 [https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html](https://lancaster-university.github.io/microbit-docs/resources/bluetooth/bluetooth_profile.html)
 
 
 
-
-## [おまけ] p5.js 環境でのハードウェア通信ライブラリ
+# [おまけ] p5.js 環境でのハードウェア通信ライブラリ
 
 p5.jsとハードウェアの通信用ライブラリは、WebUSBやWebBluetooth以外に様々あるのですが、
 ググってもWeb上にいまいち情報がまとまってないのでここにまとめます。
