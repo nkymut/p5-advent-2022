@@ -57,7 +57,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 標準で加速度、温度、光、磁気センサなどの基本的なセンサやボタン入力が装備されているため、
 自作ハードウェア特有のセンサ値の不安定さに悩まされることなく、即センサ入力を利用したインタラクション設計を始めることができます。
 
-フィジカルコンピューティング教材で一般的なProcessingやArduinoではソフトとハードのやり取りに主にシリアル通信を用いますが、50人を超えるプログラミング初学者向けクラスでは、ドライバのインストールから通信ポートのトラブルシュートで授業時間(と私の❤️)ががっつり削られてしまいます。
+フィジカルコンピューティング教材で一般的なProcessingやArduinoではソフトとハードのやり取りに主にシリアル通信を用いますが50人を超えるプログラミング初学者向けクラスでは、ドライバのインストールから通信ポートのトラブルシュートで授業時間(と私の❤️)ががっつり削られてしまいます。
 
 一方、p5.jsとmicro:bit間の通信にはWebブラウザから有線のWebUSBと無線のWebBluetoothが使えます。
 この場合、追加ドライバのインストールや設定が要らずWebブラウザだけで完結できるので楽勝です。
@@ -73,7 +73,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 ## 環境と制限
 
-設定要らずのp5.jsとmicro:bitですが、WebUSB/WebBluetooth越しに使用するのにいくつか制限があります。
+まずはじめに、p5.jsとmicro:bitをWebUSB/WebBluetooth越しで使用する環境にいくつか制限があります。
 
 ### WebブラウザのWebUSB/WebBluetooth対応状況
 
@@ -110,7 +110,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 では早速、micro:bitの光センサで電球の色を変えてみましょう。
 
-
+[WebUSBライブラリダウンロード](https://github.com/nkymut/microbit-webusb-p5js/zipball/master)
 
 [https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor)
 
@@ -249,6 +249,9 @@ micro:bitとの接続が完了すると、光センサの値によって電球�
 # WebBluetoothサンプル：光センサ
 
 WebUSBが動いたところで早速、同じコードをWebBluetoothで無線化してみましょう。
+
+
+[WebBluetoothライブラリダウンロード](https://github.com/nkymut/microbit-webble-p5js/zipball/master)
 
 [https://github.com/nkymut/microbit-webble-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webble-p5js/tree/master/examples/uart_lightsensor)
 
