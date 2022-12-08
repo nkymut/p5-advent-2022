@@ -1,19 +1,32 @@
-# This is test
+# p5.jsとmicro:bitでフィジカルコンピューティング
 
-- testing 1
-- testing 2
-- testing 3
+本レポジトリは、[Processing Advent Calendar 2022](https://adventar.org/calendars/7370)の9日目の記事レポジトリです。
 
-<div style=" display: flex;
-  align-items: center;
-  justify-content: center;">
+[https://nkymut.github.io/p5-advent-2022/](https://nkymut.github.io/p5-advent-2022/)
 
-<iframe style=" height: 500px;
-  width: 400px;
-  padding: 0px;
-  margin: 0px;
-  top: 0%;
-  left: 0;
-  border: none;" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/RecvLightSensor/"> </iframe>
 
-</div>
+この記事では、[p5.js](https://p5js.org/)と[micro:bit](https://microbit.org/)を使ってプログラミング初学者でも簡単に物理的な入出力デバイスを作成する方法について解説しています。
+
+具体的には、p5.jsからWebUSBとWebBluetooth経由でmicro:bitとの通信を可能にする
+以下の2つのライブラリを紹介しています。
+
+||||
+|--|--|--|
+|WebUSB| [https://github.com/nkymut/microbit-webusb-p5js](https://github.com/nkymut/microbit-webusb-p5js)|[microbit-webusb](https://github.com/bsiever/microbit-webusb) をクラス化、<br>複数インスタンス接続可にしたもの|
+|WebBluetooth|[https://github.com/nkymut/microbit-webble-p5js](https://github.com/nkymut/microbit-webble-p5js)|[microBit.js by antefact ](https://antefact.github.io/microBit.js/)に[IAMAS小林茂さんのGist](https://gist.github.com/kotobuki/7c67f8b9361e08930da1a5cfcfb0653f)のコードをマージしてUART対応したもの|
+
+この記事は、[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa] のもとで公開されており、自由に複製・改変・共有できますが、商業誌やウェブ記事等へ転載される場合は nkymut★gmail.com までご一報ください。
+
+
+Copyright (c) 2022 Yuta Nakayama
+
+ [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+This work is licensed under a
+[Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa].
+
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
