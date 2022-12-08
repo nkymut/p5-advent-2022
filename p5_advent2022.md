@@ -46,7 +46,7 @@ date: 09/12/2022
 この記事では、[p5.js](https://p5js.org/)と[micro:bit](https://microbit.org/)を使ってプログラミング初学者でも簡単に物理的な入出力デバイスを作成する方法について解説します。
 具体的には、p5.jsからWebUSBやWebBluetoothを使ってmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
 
-筆者のシンガポール国立大学のインダストリアルデザイン学科での授業では、
+[筆者](https://github.com/nkymut)が受け持っているシンガポール国立大学のインダストリアルデザイン学科での授業では、
 p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから７週で下のような作品を作れるようにしています。
 
 <iframe width="100%" height="300pem" src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
