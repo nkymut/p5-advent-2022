@@ -23,13 +23,6 @@ has_toc: true
   overflow: hidden;
   border: none;
 }
-
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 </style>
 
 # p5.jsとmicro:bitでフィジカルコンピューティング
