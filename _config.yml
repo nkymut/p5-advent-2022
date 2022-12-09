@@ -8,8 +8,12 @@ google_analytics: G-GX0HTR3LCT
 ga_tracking: G-GX0HTR3LCT
 
 layout: page
-title: ""
-
+title: "p5.jsとmicro:bitでフィジカルコンピューティング"
+summary: この記事は、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
+logo: https://nkymut.github.io/p5-advent-2022/assets/p5js_microbit_logo.png
+image: https://nkymut.github.io/p5-advent-2022/assets/WebBle_lightsensor2.png
+largeimage: https://nkymut.github.io/p5-advent-2022/assets/WebBle_lightsensor2.png
+date: 09/12/2022
 
 # Aux links for the upper right navigation
 aux_links:
@@ -21,3 +25,8 @@ aux_links:
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
+
+
+twitter:
+  username: nkymuta
+  card: summary
