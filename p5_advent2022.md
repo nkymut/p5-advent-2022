@@ -5,7 +5,7 @@ permalink: /index.html
 has_toc: true
 author: Yuta Nakayama
 summary: この記事では、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
-image: https://nkymut.github.io/p5-advent-2022/assets/WebBle_lightsensor2.png
+image: /assets/WebBle_lightsensor2.png
 date: 09/12/2022
 ---
 
