@@ -4,6 +4,8 @@ title: p5.jsとmicro:bit でフィジカルコンピューティング
 permalink: /index.html
 has_toc: true
 author: Yuta Nakayama
+summary: この記事では、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
+largeimage: https://nkymut.github.io/p5-advent-2022/assets/WebBle_lightsensor2.png
 date: 09/12/2022
 ---
 
@@ -44,7 +46,7 @@ date: 09/12/2022
 ## はじめに
 
 この記事では、[p5.js](https://p5js.org/)と[micro:bit](https://microbit.org/)を使ってプログラミング初学者でも簡単に物理的な入出力デバイスを作成する方法について解説します。
-具体的には、p5.jsからWebUSBやWebBluetoothを使ってmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
+具体的には、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
 
 [筆者](https://github.com/nkymut)が受け持っているシンガポール国立大学のインダストリアルデザイン学科での授業では、
 p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから７週で下のような作品を作れるようにしています。
