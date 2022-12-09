@@ -11,8 +11,8 @@ layout: page
 title: ""
 summary: この記事は、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
 # logo: https://nkymut.github.io/p5-advent-2022/assets/p5js_microbit_logo.png
-image: https://nkymut.github.io/p5-advent-2022/assets/WebBle_lightsensor2.png
-largeimage: https://nkymut.github.io/p5-advent-2022/assets/WebBle_lightsensor2.png
+image: /assets/p5js_microbit_logo.png
+summary_large_image: /assets/WebBle_lightsensor2.png
 date: 09/12/2022
 
 # Aux links for the upper right navigation
