@@ -42,6 +42,8 @@ Specifically, we will show how to communicate with micro:bit sensor inputs from 
 |--|--|--|
 |WebUSB| [https://github.com/nkymut/microbit-webusb-p5js](https://github.com/nkymut/microbit-webusb-p5js)|[microbit-webusb](https://github. com/bsiever/microbit-webusb) as a class, <br>multi-instance connection possible|
 |WebBluetooth|[https://github.com/nkymut/microbit-webble-p5js](https://github.com/nkymut/microbit-webble-p5js)|[microBit.js by antefact ](https://antefact.github.io/microBit.js/) with UART support by merging [IAMAS Shigeru Kobayashi's Gist](https://gist.github.com/kotobuki/7c67f8b9361e08930da1a5cfcfb0653f) code|
+
+
 This article is published under the [Creative Commons Attribution-ShareAlike 4.0 International License][cc-by-sa], and can be freely copied, modified, and shared. Please let us know at nkymut★gmail.com.
 
 Copyright (c) 2022 Yuta Nakayama
