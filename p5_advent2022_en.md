@@ -1,12 +1,13 @@
 ---
 layout: page
-title: Physical computing with p5.js and micro:bit
+title: Physical computing with p5.js and micro:bit [english] 
 permalink: /index_en.html
 has_toc: true
 author: Yuta Nakayama
 summary: This article explains how to communicate with micro:bit buttons and sensor inputs via WebUSB or WebBluetooth from p5.js.
 image: /assets/WebBle_lightsensor2.png
 date: 09/12/2022
+nav_order: 2
 ---
 
 <style>
@@ -47,8 +48,7 @@ This article is the 9th day of [Processing Advent Calendar 2022](https://adventa
 This article explains how to use [p5.js](https://p5js.org/) and [micro:bit](https://microbit.org/) to create physical input/output devices easily.
 Specifically, we will show how to communicate with micro:bit sensor inputs from p5.js via WebUSB and WebBluetooth.
 
-[The author](https://github.com/nkymut) teaches at the Division of Industrial Design at the National University of Singapore.
-Using p5.js and micro:bit, Students can create works like the video below in 7 weeks from almost zero programming experience.
+[The author](https://github.com/nkymut) teaches at the Division of Industrial Design at the National University of Singapore. And using p5.js and micro:bit, Students can create works like the video below in 7 weeks from almost zero programming experience.
 
 <iframe scrolling="no" width="100%" height="300pem" src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
@@ -77,7 +77,7 @@ First of all, there are some limitations when using p5.js and micro:bit over Web
 
 As of December 2022, Chrome (and Opera) are the only browsers that support WebUSB and WebBluetooth.Especially in Safari, it is [clearly stated](https://www.zdnet.com/article/apple-declined-to-implement-16-web-apis-in-safari-due-to-privacy-concerns/) that they have declined to implement these features due to pricacy concerns. So don't expect any future support.
 
-The support status of each web browser is as follows. ([caniuse.com] (caniuse.com) investigation)
+The support status of each web browser is as follows. (Ref. [caniuse.com](caniuse.com))
 
 |  Environment | [WebUSB](https://caniuse.com/webusb)  |　[WebBluetooth](https://caniuse.com/web-bluetooth)|
 |---|:---:|:---:|
@@ -198,22 +198,22 @@ Communication between p5.js and micro:bit is set as a callback function.
 The code below sets the light sensor data received vis UART to the brightness value of the bulb object.
 
 ```js
-  /* setup() 内*/
-  microBit.onConnect(function(){　// 接続成功コールバック
+/*in setup() */
+  microBit.onConnect(function(){ //Connection success callback
     console.log("connected");
   });
 
-  microBit.onDisconnect(function(){ //切断時コールバック
+  microBit.onDisconnect(function(){ //Disconnection callback
     console.log("disconnected");
   });
 
 
-  microBit.setReceiveUARTCallback( // UART受信コールバック
-    function(receivedData){　
-      let val = int(receivedData); //受信テキストを数値に変換
-      bulb.brightness = val; //電球の明るさ変更
+  microBit.setReceiveUARTCallback( //UART receive callback
+    function(receivedData) {　
+      let val = int(receivedData); //convert the received text to a number
+      bulb.brightness = val; //change bulb brightness
     
-      fadeSlider.value(bulb.brightness); //フェーダーに明るさを表示
+      fadeSlider.value(bulb.brightness); //display brightness on fader
     }
   );
 
