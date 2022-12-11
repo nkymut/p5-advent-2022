@@ -7,6 +7,7 @@ author: Yuta Nakayama
 summary: この記事では、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
 image: /assets/WebBle_lightsensor2.png
 date: 09/12/2022
+order: 1
 ---
 
 <style>
@@ -289,7 +290,7 @@ WebBluetooth光センサ micro:bitコード v01用: [microbit-LightSensorBLEUART
 
 WebBluetooth光センサ micro:bitコード v02用:[microbit-LightSensorBLEUARTv02.hex](https://nkymut.github.io/microbit-webble-p5js/examples/uart_lightsensor/microbit_code/microbit-LightSensorBLEUARTv02.hex)
 
-WebUSBと違い無線の場合、コンソールからmicro:bitnの状態を確認できないので、
+WebUSBと違い無線の場合、コンソールからmicro:bitの状態を確認できないので、
 LEDマトリクスにBluetoothの接続状態を表示すると便利です。
 しかし、LEDマトリクスの表示はメモリを大量に消費するらしく非力なv01(スピーカーやマイク入力のついていないタイプ)のmicro:bitだと[Error 20](https://support.microbit.org/support/solutions/articles/19000097280-020#:~:text=020%20Print&text=There%20is%20no%20free%20memory,a%20lot%20of%20large%20variables.&text=Try%20reducing%20your%20code%20by%20making%20functions%20out%20of%20large%20sections.)を表示して止まってしまう場合があります。
 
@@ -444,9 +445,8 @@ function draw() {
 |WebBluetooth|[https://github.com/nkymut/microbit-webble-p5js](https://github.com/nkymut/microbit-webble-p5js)|
 
 
-p5.jsでハードウェア入力を扱う方法としては他に
-WebMidiという方法がありますが以前p5.soundをMIDI経由で鳴らすチュートリアルが
-ここにありますので興味がある方はぜひ。
+p5.jsでハードウェア入力を扱う方法としては他にWebMidiという方法があります。
+以前p5.soundをMIDI経由で鳴らすチュートリアルを行った際のドキュメントがここにありますので興味がある方はぜひ。
 [https://github.com/nkymut/ShapeOfSound/blob/main/tutorials/wk06/p5sound_tutorial.md#06-p5sound--midi-input](https://github.com/nkymut/ShapeOfSound/blob/main/tutorials/wk06/p5sound_tutorial.md#06-p5sound--midi-input)
 
 
