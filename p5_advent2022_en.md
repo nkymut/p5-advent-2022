@@ -44,10 +44,11 @@ This article is the 9th day of [Processing Advent Calendar 2022](https://adventa
 
 ## Introduction
 
-In this article, I will explain how to use [p5.js](https://p5js.org/) and [micro:bit](https://microbit.org/) to easily create physical input/output devices even for programming beginners. Specifically, I will introduce how to to communicate with micro:bit button and sensor input from p5.js via WebUSB or WebBluetooth.
+This article explains how to use [p5.js](https://p5js.org/) and [micro:bit](https://microbit.org/) to create physical input/output devices easily.
+Specifically, we will show how to communicate with micro:bit sensor inputs from p5.js via WebUSB and WebBluetooth.
 
-[Author](https://github.com/nkymut) teaches at the Division of Industrial Design at the National University of Singapore.
-Using p5.js and micro:bit, Students can create works like the one below in 7 weeks from almost zero programming experience.
+[The author](https://github.com/nkymut) teaches at the Division of Industrial Design at the National University of Singapore.
+Using p5.js and micro:bit, Students can create works like the video below in 7 weeks from almost zero programming experience.
 
 <iframe scrolling="no" width="100%" height="300pem" src="https://www.youtube.com/embed/rqI1p5iXJeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
 
