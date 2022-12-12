@@ -258,7 +258,7 @@ Now that WebUSB works, let's make the same code wireless with WebBluetooth.
 
 ## micro:bit Bluetooth extension
 
-まず、micro:bitのmakeCodeエディタに[Bluetooth拡張](https://makecode.microbit.org/reference/bluetooth)を追加します。
+First, add the [bluetooth extension](https://makecode.microbit.org/reference/bluetooth) to the micro:bit makeCode editor.
 ![](./assets/MicroBit_Bluetooth_Extension.gif)
 
 
