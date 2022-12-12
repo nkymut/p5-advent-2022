@@ -65,8 +65,8 @@ So, here I will introduce the following two libraries to enable communication be
 
 ||||
 |--|--|--|
-|WebUSB| [https://nkymut.github.io/microbit-webusb-p5js/](https://nkymut.github.io/microbit-webusb-p5js/)|[microbit-webusb](https://github.com/bsiever/microbit-webusb) をクラス化、<br>複数インスタンス接続可にしたもの|
-|WebBluetooth|[https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)|[microBit.js by antefact ](https://antefact.github.io/microBit.js/)に[IAMAS小林茂さんのGist](https://gist.github.com/kotobuki/7c67f8b9361e08930da1a5cfcfb0653f)のコードをマージしてUART対応したもの|
+|WebUSB| [https://nkymut.github.io/microbit-webusb-p5js/](https://nkymut.github.io/microbit-webusb-p5js/)|[microbit-webusb by bseiver](https://github.com/bsiever/microbit-webusb) wrapped in a class to allow multiple instances to be connected|
+|WebBluetooth|[https://nkymut.github.io/microbit-webble-p5js/](https://nkymut.github.io/microbit-webble-p5js/)|Add the code of [IAMAS Shigeru Kobayashi's Gist](https://gist.github.com/kotobuki/7c67f8b9361e08930da1a5cfcfb0653f) to [microBit.js by antefact ](https://antefact.github.io/microBit.js/) and support UART|
 
 
 ## Environment and limits
