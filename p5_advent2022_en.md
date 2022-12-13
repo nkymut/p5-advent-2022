@@ -312,7 +312,7 @@ Next, add the [ubitwebble.js](https://nkymut.github.io/microbit-webble-p5js/ubit
   <!--<script language="javascript" type="text/javascript" src="https://nkymut.github.io/microbit-webusb-p5js/ubitwebusb.js"></script> -->
 
   <!--WebBluetooth library -->
-  <script language="javascript" type="text/javascript" src="https://nkymut.github.io/microbit-webusb-p5js/ubitwebble.js"></script>
+  <script language="javascript" type="text/javascript" src="https://nkymut.github.io/microbit-webble-p5js/ubitwebble.js"></script>
 ```
 
 ## WebBluetooth library setup
