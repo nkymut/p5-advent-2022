@@ -32,6 +32,9 @@ usetocbot: true
 }
 </style>
 
+{: .no_toc }
+
+
 # p5.jsとmicro:bitでフィジカルコンピューティング
 
 本記事は、[Processing Advent Calendar 2022](https://adventar.org/calendars/7370)の9日目の記事です。
