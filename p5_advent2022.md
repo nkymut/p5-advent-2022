@@ -8,6 +8,8 @@ summary: この記事では、p5.jsからWebUSBやWebBluetooth経由でmicro:bit
 image: /assets/WebBle_lightsensor2.png
 date: 09/12/2022
 nav_order: 1
+has_toc: true # (on by default)
+usetocbot: true
 ---
 
 <style>
