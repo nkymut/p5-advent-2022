@@ -32,10 +32,12 @@ usetocbot: true
 }
 </style>
 
-{: .no_toc }
+
 
 
 # p5.jsとmicro:bitでフィジカルコンピューティング
+{: .no_toc }
+
 
 本記事は、[Processing Advent Calendar 2022](https://adventar.org/calendars/7370)の9日目の記事です。
 
@@ -50,6 +52,7 @@ usetocbot: true
 </details>
 
 ## はじめに
+{:toc}
 
 この記事では、[p5.js](https://p5js.org/)と[micro:bit](https://microbit.org/)を使ってプログラミング初学者でも簡単に物理的な入出力デバイスを作成する方法について解説します。
 具体的には、p5.jsからWebUSBやWebBluetooth経由でmicro:bitのボタンやセンサ入力のやり取りする方法を紹介します。
@@ -98,7 +101,7 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 | Opera |○|○|
 | Chrome on Android |○|○|
 | Safari on iOS|×|×|
-| Chromium on Raspberry PI |_|_|
+| Chromium on Raspberry PI |○|×|
 
 
 ### p5.js 環境の対応状況
@@ -119,6 +122,8 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 では早速、micro:bitの光センサで電球の色を変えてみましょう。
 
 [WebUSBライブラリダウンロード](https://github.com/nkymut/microbit-webusb-p5js/zipball/master)
+
+p5js.org サンプルコード: [https://editor.p5js.org/didny/sketches/_P18rzj9](https://editor.p5js.org/didny/sketches/_P18rzj9)
 
 [https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor)
 

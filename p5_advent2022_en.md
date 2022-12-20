@@ -87,7 +87,7 @@ The support status of each web browser is as follows. (Ref. [caniuse.com](canius
 | Opera |○|○|
 | Chrome on Android |○|○|
 | Safari on iOS|×|×|
-| Chromium on Raspberry PI |_|_|
+| Chromium on Raspberry PI |○|×|
 
 
 ### Support status of p5.js environment
@@ -109,7 +109,11 @@ Now let's change the color of the light bulb with the micro:bit's light sensor.
 
 [WebUSB library download](https://github.com/nkymut/microbit-webusb-p5js/zipball/master)
 
+p5js.org sample: [https://editor.p5js.org/didny/sketches/_P18rzj9](https://editor.p5js.org/didny/sketches/_P18rzj9)
+
 [https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor](https://github.com/nkymut/microbit-webusb-p5js/tree/master/examples/uart_lightsensor)
+
+
 
 <div class="p5div">
 <iframe scrolling="no" class="p5livesample" allow="usb" src="https://nkymut.github.io/microbit-webusb-p5js/examples/uart_lightsensor/"> </iframe>
