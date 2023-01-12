@@ -369,10 +369,19 @@ BBC micro:bit [固有ID]
 ここで表示される5文字のアルファベットがmicro:bitのBluetooth通信時の固有IDになっており、
 複数台のmicro:bitを扱う場合は、このIDで個体を認識します。
 
-が！
+~~が！~~
 
-このIDがなんと **実際接続してみる以外に知る方法がない！** のでワークショップなどで
-数十台のmicro:bitを扱うときに事前にIDを調べておかないとハマります(ハマりました)。
+~~このIDがなんと **実際接続してみる以外に知る方法がない！** のでワークショップなどで
+数十台のmicro:bitを扱うときに事前にIDを調べておかないとハマります(ハマりました)。~~
+
+追記：micro:bitの固有ID (device name)を知る方法ありました。
+[https://support.microbit.org/support/solutions/articles/19000067679-how-to-find-the-name-of-your-micro-bit](https://support.microbit.org/support/solutions/articles/19000067679-how-to-find-the-name-of-your-micro-bit)
+
+Advanced -> Control -> more から (device name) で取得できます。
+
+![device name](./assets/MicroBit-Bluetooth_device-name.png)
+
+[show string]や[serial write line]で表示されたのち
 micro:bit本体にシールなどでメモっておくと便利です。
 
 

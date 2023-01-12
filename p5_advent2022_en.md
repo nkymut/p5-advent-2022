@@ -349,11 +349,23 @@ BBC micro:bit [five character unique ID]
 ```
 The 5-character alphabet displayed here is the unique ID for micro:bit bluetooth communication,When dealing with multiple micro:bits, this id will be used to identify each individual.
 
-But!
+~~But!~~
 
-** There is no way to know this ID except by actually connecting to it! ** 
-So when you handle dozens of micro:bits in a workshop, etc.
-you need to check the ID in advance or you will get into a big trouble (I did).
+~~There is no way to know this ID except by actually connecting to it!~~
+~~So when you handle dozens of micro:bits in a workshop, etc.~~
+~~you need to check the ID in advance or you will get into a big trouble (I did).~~
+
+PS: There is actually a way to know the unique id (deviceName) of the micro:bit programatically.
+
+[https://support.microbit.org/support/solutions/articles/19000067679-how-to-find-the-name-of-your-micro-bit](https://support.microbit.org/support/solutions/articles/19000067679-how-to-find-the-name-of-your-micro-bit)
+
+You can obtain the ID with (device name) from the menu under,    
+Advanced -> Control -> more
+
+And you can display it with [show string] or [serial write line] block.
+
+![device name](./assets/MicroBit-Bluetooth_device-name.png)
+
 It is useful to write down the ID on a sticker or something on the micro:bit.
 
 If you know of a method to find out the unique Bluetooth ID other than connecting the device, please let us know.
