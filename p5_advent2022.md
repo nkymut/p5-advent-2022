@@ -106,13 +106,17 @@ p5.jsとmicro:bitをつかって、プログラミング経験ほぼゼロから
 
 ### p5.js 環境の対応状況
 
-また[editor.p5js.org](https://editor.p5js.org/ )ユーザーには悲しいお知らせなのですが、
-現状[WebBluetoothが機能していない](https://github.com/processing/p5.js-web-editor/issues/1900)ようです。
+追記(2023/02/15): editor.p5js.orgのプレビューでもWebBluetoohが使えるように[修正され](https://github.com/processing/p5.js-web-editor/commit/95fa5d80189793be5530f16ad91bf4af408549ee)ました。よかったですね。
+
+~~また[editor.p5js.org](https://editor.p5js.org/ )ユーザーには悲しいお知らせなのですが、~~
+~~現状[WebBluetoothが機能していない](https://github.com/processing/p5.js-web-editor/issues/1900)ようです。~~
+
+
 [https://openprocessing.org/](https://openprocessing.org/)かローカル[VS Code上のLiveServerで試す](https://timrodenbroeker.de/how-to-use-p5-js-with-visual-studio-code/)のをオススメします。
 
 |  環境 | WebUSB  |　WebBluetooth|
 |---|:---:|:---:|
-| [https://editor.p5js.org/](https://editor.p5js.org/ )  |○|×|
+| [https://editor.p5js.org/](https://editor.p5js.org/ )  |○|○|
 | [https://openprocessing.org/](https://openprocessing.org/) |○|○|
 |  [https://glitch.com/](https://glitch.com/) |○|○|
 |  [VSCode LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |○|○|

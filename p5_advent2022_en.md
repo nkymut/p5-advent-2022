@@ -92,13 +92,15 @@ The support status of each web browser is as follows. (Ref. [caniuse.com](canius
 
 ### Support status of p5.js environment
 
-Also, sad news for [editor.p5js.org](https://editor.p5js.org/) users,
-Currently [WebBluetooth is not working](https://github.com/processing/p5.js-web-editor/issues/1900).
+UPDATE(2023/02/15): With great pleasure, WebBluetooh is now [available](https://github.com/processing/p5.js-web-editor/commit/95fa5d80189793be5530f16ad91bf4af408549ee) in [editor.p5js.org](https://editor.p5js.org/) !
+
+~~Also, sad news for [editor.p5js.org](https://editor.p5js.org/) users,~~
+~~Currently [WebBluetooth is not working](https://github.com/processing/p5.js-web-editor/issues/1900).~~
 [openprocessing.org/](https://openprocessing.org/) or [local setup with LiveServer on VS Code](https://timrodenbroeker.de/how-to-use-p5-js-with-visual-studio-code/) are recommended for the time being.
 
 | Environemt | WebUSB  |　WebBluetooth|
 |---|:---:|:---:|
-| [https://editor.p5js.org/](https://editor.p5js.org/ )  |○|×|
+| [https://editor.p5js.org/](https://editor.p5js.org/ )  |○|○|
 | [https://openprocessing.org/](https://openprocessing.org/) |○|○|
 |  [https://glitch.com/](https://glitch.com/) |○|○|
 |  [VSCode LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) |○|○|
